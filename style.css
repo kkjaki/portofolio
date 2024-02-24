@@ -44,7 +44,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   /* not working */
   color: white;
 }
@@ -68,14 +68,20 @@ article {
 
 #home {
   padding-left: 80px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
-#home pre {
+#home section {
+  display: flex;
+  flex-direction: column ;
   font-family: 'Alegreya SC', serif;
   font-size: 80px;
   line-height: 70px;
-  margin-top: 100px;
-  margin-bottom: -30px;
+  padding-top: 100px;
+  width: 50%;
+  flex-wrap: wrap;
 }
 
 #home span {
@@ -85,3 +91,12 @@ article {
   line-height: 50px;
   color: rgb(175, 175, 175)
 }
+
+#home a {
+  text-decoration: none;
+  width: fit-content;
+} 
+
+#home a:hover {
+  cursor: pointer;
+} 
